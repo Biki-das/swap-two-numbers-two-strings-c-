@@ -1,0 +1,46 @@
+#include <iostream>
+#include <string>
+
+
+// program to swap two numbers
+void swapint(int &a, int &b){
+    int tmp = a;
+    a = b;
+    b = tmp;
+
+}
+
+
+
+
+
+
+using namespace std;
+
+
+
+
+int main(){
+
+int a = 6;
+int b = 9;
+
+
+swapint(a,b);
+
+cout<<"value of a is:\n"<<a<<"\n";
+cout<<"value of a is:\n"<<b<<"\n";
+
+// program to swap two strings(easiest method)
+string str1;
+string str2;
+
+cin>>str1;
+cin>>str2;
+
+str2.swap(str1);
+cout<<str1<<"\n";
+cout<<str2<<"\n";
+
+    return 0;
+}
